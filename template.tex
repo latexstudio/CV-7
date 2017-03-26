@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com) and Harsh Gadgil
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill progress bars
+\newcommand\skills{
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{~~Admin~~}\\\textbf{Sys},
+        \textbf{~~~Angular 2~~~}\\\textbf{RxJs},
+        \textbf{~~~~~~Web~~~~~~}\\\textbf{Dev},
+        \textbf{~~VHDL~~}\\\textbf{DSPs},
+        \textbf{Physic}\\\textbf{Programming},
+        \textbf{Robotic}\\\textbf{Engineering}
+    }
+}
+
+\interests{{Security Analysis/4},{Embedded Systems/5},{Web Developer/5},{Software Engineering/6}}
+
+\languages{{VHDL, Verilog/3},{C++, Java/3.5},{PHP, HTML5, CSS3/4.5},{C/5},{JS, TypeScript, RxJs, Angular2 /6}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Dammaretz \\Theo} % Your name
+\cvjobtitle{ Full Stack Developer} % Job title/career
+
+\cvlinkedin{https://linkedin.com/in/theodammaretz}
+\cvnumberphone{+33 4 76 89 19 01} % Phone number
+\cvsite{http://www.dammaretz.fr} % Personal website
+\cvmail{theo@dammaretz.fr} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{June 2016}
+        {MSc., Embedded Systems Engineering}
+        {\href{http://esisar.grenoble-inp.fr/}{Grenoble INP - ESISAR}}
+        {Valence, France}
+        {with distinction Assez Bien}
+	\twentyitem
+    	{June 2014}
+        {BEng., Embedded Systems Engineering}
+        {\href{http://esisar.grenoble-inp.fr/}{Grenoble INP - ESISAR}}
+        {Valence, France}
+        {with distinction Assez Bien}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2015 - 2016}
+        {Graduate Researcher}
+        {\href{http://www.tohoku.ac.jp/en/}{Tohoku University}}
+        {Sendai, Tohoku, Japan}
+        {
+        {\begin{itemize}
+        \item Developed a versatile simulation model to analyze interactions between DNA monomer.
+        \item Proposed a new way to quickly develop simulated test for DNA researchers
+        \item Member of the winning international contest, BIOMOD, team 2015.
+    \end{itemize}}
+        }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem
+   		{Oct 2016 - \\ Present}
+        {Web Developer}
+        {\href{http://www.lecourrierderussie.com}{Le Courrier de Russie}}
+        {}
+        {
+        {\begin{itemize}
+        \item In charge of the Development and maintenance of the journal website and web resources,
+        \item Optimized websites for compliance with ARIA standard, SOE optimization and perceived performance by the user. In one year, the journal's website increase it's search engine placement, got ARIA compliant. The website loading got 300\% faster while getting more functionality. This was achieved through multiple asynchronous loading, scripts optimizing and "Over the fold" priority.
+        \item Developed an Angular 2 application for Internal Purposes. Support Firebase real time database through RxJs integration.
+    \end{itemize}}
+        }
+
+     \twentyitem
+   		{Jan 2015 - \\ June 2015}
+        {Full Stack Developer}
+        {\href{http://synergetik.fr/}{Synergetik}}
+        {}
+        {
+        \begin{itemize}
+        \item Designed and developed a complete stack of monitoring solution for solar panel installations.
+        \item Implemented the final solution covering all possible chain aspects: Starting with embedded solution programmed in C for serial readings to NoSQL databases and a website built with Symfony 2 \& Boostrap enabling the owner to manage and optimize the solar farm.
+    \end{itemize}
+    	}
+
+    	\twentyitem
+   		{Jul 2013 - \\ Aug 2013}
+        {Embedded Systems Developer}
+        {\href{http://www.fesys.fr/fr}{Full Electronic System}}
+        {}
+        {
+        \begin{itemize}
+        \item Modified a product of the company to include Plug \& Play compatibility. The final product include multiple method to be accessible remotely without any configuration required from the user. \textit{UDP Hole punching}, \textit{UPNP port managing} or \textit{Rendez-vous servers} were explored and tested.
+    \end{itemize}
+    	}
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document}
