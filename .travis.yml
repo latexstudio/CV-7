@@ -1,5 +1,9 @@
+dist: trusty
+sudo: required
+os: linux
 before_install:
-- sudo apt-get -qq update && sudo apt-get -qq install -y texlive texlive-xetex
+- sudo apt-get -qq update
+- sudo apt-get install -y texlive texlive-xetex
 install:
 - sudo apt-get -qq install -y texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
