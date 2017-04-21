@@ -3,10 +3,11 @@ sudo: required
 os: linux
 before_install:
 - sudo apt-get -qq update
-- sudo apt-get install -y texlive texlive-xetex
+- sudo apt-get install -y texlive texlive-xetex xzdec
 install:
 - sudo apt-get -qq install -y texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
-- sudo tlmgr install ClearSans
+- tlmgr init-usertree
+- tlmgr install ClearSans
 script:
 - bash ./deploy.sh
 env:
