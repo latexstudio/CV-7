@@ -1,4 +1,4 @@
-\ProvidesClass{twentysecondcv}[2015/02/28 CV class]
+\ProvidesClass{template}[2015/02/28 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
@@ -141,7 +141,7 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\interests[1]{ 
+\newcommand\interests[1]{
 	\renewcommand{\interests}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
@@ -154,7 +154,7 @@
 }
 
 % Command for printing skill progress bars
-\newcommand\languages[1]{ 
+\newcommand\languages[1]{
 	\renewcommand{\languages}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
@@ -180,23 +180,23 @@
   \begin{textblock}{6}(0.5, 0.2)
 
     %------------------------------------------------
-        
+
     \vspace{4mm}
-    
+
     {\Huge\color{materialpurple}\cvname}
 
     %------------------------------------------------
-    
+
     {\Large\color{black!80}\cvjobtitle}
-    
+
     %%{\includegraphics[scale=0.2]{img/avatar.jpg}}
 
     %------------------------------------------------
-    
+
         \vspace{5mm}
     \renewcommand{\arraystretch}{1.6}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
-        
+
           \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
@@ -209,21 +209,21 @@
               \begin{array}{l}
               \includegraphics[scale=0.1]{img/tel.png}
               \end{array}
-              $} 
+              $}
             & \cvnumberphone\\}
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
               {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
               \end{array}
-              $} 
+              $}
             & \cvsite\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
               {\href{mailto:\cvmail}{\includegraphics[scale=0.05]{img/email.png}}}
               \end{array}
-              $} 
+              $}
             & \href{mailto:\cvmail}{\cvmail}}
     \end{tabular}
 
@@ -232,18 +232,18 @@
         \profilesection{Skills}{4cm}
 
     	\skills
-        
+
         %------------------------------------------------
         \vspace{3mm}
-        \profilesection{Interests}{3cm} 
-        
+        \profilesection{Interests}{3cm}
+
         \interests
-        
+
         \vspace{3mm}
-        \profilesection{Languages}{2.4cm} 
-        
+        \profilesection{Languages}{2.4cm}
+
         \languages
-        
+
   \end{textblock}
 }
 
@@ -297,7 +297,7 @@
 
 \newcommand{\twentyitem}[5]{%
 	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#2}% 
+		\textbf{#2}%
 		\hfill%
 		{\footnotesize#3}\\%
         \ifblank{#4}{}{#4 \\}
@@ -352,4 +352,3 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
-

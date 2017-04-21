@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '7'
+before_install:
+- sudo apt-get -qq update
+install:
+- sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-xetex
+script:
+- bash ./deploy.sh
+env:
+  global:
+  - GITHUB_REPO: Blightwidow/CV
+  - secure: EPg/zbbG+FzpMK7/SjfKmIPikOL+Qs+Vs7e3oMJowTJuPWknq7/mXNBzLEwL5xT4CgqtD3L0iwliWZNJ17GOfwBDgCrbL+fTEewPMhwH92dzBHnzwb+bs5kPz28wIJqlSi/pG6U5PXIVmaaBv5/z3uktMHz6E0ei01PTX1gjck7Wdz5lQ/BvcCvfqmV1UVjfJW3uGLYi8Bo2BNuJyeiNKt+zrrgqxRha1LNrv56rB2eTlQXuWTR0MiJh8LG1ovew1UIb/menWH9h0GQEfkoDIuTEXsTXkycudbP6AyRd3FYNslBnuIyTfq3o1OriTVNBOysfJUgV4C84OHXA5RlPcO6fUkahIoY7V76j1hmdxRvZL0QLfHPcymTMNpx5MBaoFxFiAvqFSyo2durfuM2rwgrOmS1ryKZxABMXE+fDPtzjvUgXs6P/xeUll/MhtTT0quY/z6Qx4zFJA6SyZSd9cu6xyVEp/OO6DwgtxJXppLEVHuUBaNWTvM3vwIqnVGaY7Nk02Z/8t6Uh71D//eAVJq9Vcu5xD0SacSPxqWgB/Fvt5MFSy1+8qUtAffLGqL1EgWdg3RyAxwPyo1GQGRpt6l0fqBjh9/UQWKwQQSwFMnQ28Bv2mIX5qLzdZpWA1vhHsdGOOva1HuxE+nBwgx3qaQh8lDa3lR/RmvBQpSEqRk8=
