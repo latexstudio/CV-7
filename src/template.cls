@@ -5,8 +5,6 @@
 %----------------------------------------------------------------------------------------
 %	 REQUIRED PACKAGES
 %-----------------------------------------------------------------------	-----------------
-
-\RequirePackage[quiet]{fontspec}
 \RequirePackage[sfdefault]{ClearSans}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}

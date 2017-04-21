@@ -6,6 +6,7 @@ before_install:
 - sudo apt-get install -y texlive texlive-xetex
 install:
 - sudo apt-get -qq install -y texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo tlmgr install ClearSans
 script:
 - bash ./deploy.sh
 env:
